@@ -1,0 +1,62 @@
+.container-fluid
+  .row
+    %nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => "#"} WeBuyGoods.com
+        #navbar.navbar-collapse.collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => "#"} Home
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                Sell
+                %span.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"} Action
+                %li
+                  %a{:href => "#"} Another action
+                %li
+                  %a{:href => "#"} Something else here
+                %li.divider{:role => "separator"}
+                %li.dropdown-header Nav header
+                %li
+                  %a{:href => "#"} Separated link
+                %li
+                  %a{:href => "#"} One more separated link  
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                Buy
+                %span.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"} Action
+                %li
+                  %a{:href => "#"} Another action
+                %li
+                  %a{:href => "#"} Something else here
+                %li.divider{:role => "separator"}
+                %li.dropdown-header Nav header
+                %li
+                  %a{:href => "#"} Separated link
+                %li
+                  %a{:href => "#"} One more separated link
+            %li
+              %a{:href => "#"} About
+            %li
+              %a{:href => "#"} Contact
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "./"}
+                Sign In
+            %li  
+              %a{:href => "./"}
+                Info
+
+       

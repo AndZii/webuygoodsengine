@@ -1,0 +1,13 @@
+.container
+  .row
+    %img{:src => "/big-logo.jpg", :position => "center", :class => "img-responsive big-logo", :alt => "Cinque Terre"}
+    .search-form
+      %form
+        %input{:placeholder => "Search...", :required => "", :type => "text", :class => "search"}/
+        %input{:type => "button", :value => "Search", :class => "button"}/
+    %h4.search-result-title 
+      Search Result:
+    .search-result
+      - 8.times do
+        .col-md-3.col-xs-6
+          = render "/templates/search_card"
